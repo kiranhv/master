@@ -3,8 +3,10 @@ package StepDefination;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,8 +28,8 @@ public class SmokeTest {
 	@When("^I Enter valid \"([^\"]*)\" and valid \"([^\"]*)\"$")
 	public void i_Enter_valid_and_valid(String uname, String pass) throws Throwable {
 		
-	//driver.findElement(By.xpath("[@id='email']")).sendKeys("xxxx");
-	driver.findElement(By.id("email")).sendKeys(uname);
+	driver.findElement(By.xpath("//*[@id='email']")).sendKeys(uname);
+	//driver.findElement(By.id("email")).sendKeys(uname);
     driver.findElement(By.id("pass")).sendKeys(pass);
     
   //*[@id="email"]
@@ -38,12 +40,14 @@ public class SmokeTest {
 		
 		driver.findElement(By.id("loginbutton")).click();
 		WebDriverWait wait=new WebDriverWait(driver, 20);
+		
 		 
 	}
 	
 	@Then("^Close the browser$")
 	public void close_the_browser() throws Throwable {
-		driver.close();
+	    // Write code here that turns the phrase above into concrete actions
+	    driver.close();
 	}
 	
 }

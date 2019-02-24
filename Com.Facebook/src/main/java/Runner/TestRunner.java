@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="features",
-				 glue= "StepDefination",
-				 plugin= {"json:target/Report.json"},
+				glue="StepDefination",
+				plugin= {"json:target/Report.json"},
 				monochrome= true)
 public class TestRunner {
-   
+
 }
