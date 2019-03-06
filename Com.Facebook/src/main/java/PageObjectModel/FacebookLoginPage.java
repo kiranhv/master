@@ -6,13 +6,11 @@ import org.openqa.selenium.WebElement;
 
 import Foundation.BaseClass;
 
-public class FacebookLoginPage {
-	
-	static WebDriver driver;
+public class FacebookLoginPage extends BaseClass{
 	
 	By username=By.xpath("//*[@id=\'email\']");
-	By password = By.id("email");
-	By login=By.xpath("//*[@id=\'u_0_2\']");
+	By password = By.id("pass");
+	By login=By.id("loginbutton");
 
 	
 	/*public FacebookLoginPage(WebDriver driver)

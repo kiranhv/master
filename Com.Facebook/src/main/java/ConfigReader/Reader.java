@@ -16,7 +16,7 @@ public class Reader {
 		try 
 		{
 		
-			File src= new File("./Properties/Property");		
+			File src= new File("./src/main/resources/Properties/Property.properties");		
 			FileInputStream fis= new FileInputStream(src);
 			pro = new Properties();
 			pro.load(fis);
@@ -34,7 +34,7 @@ public class Reader {
 	
 	public String getChromepath()
 	{
-		return pro.getProperty("ChromeDriver");
+		return pro.getProperty("chromedriver");
 	}
 	public String getURL()
 	{

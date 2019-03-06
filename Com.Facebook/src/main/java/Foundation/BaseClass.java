@@ -7,15 +7,23 @@ import ConfigReader.Reader;
 
 public class BaseClass {
 	
-	static WebDriver driver;
+public static WebDriver driver;
 	
-	public static void Setup()
+	public WebDriver getDriver()
 	{
-		driver= new ChromeDriver();
 		Reader read=new Reader();
-		System.setProperty("Webdriver.chrome.driver",read.getChromepath());
-		driver.get(read.getURL());
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + read.getChromepath());
+		driver= new ChromeDriver();
 		driver.manage().window().maximize();
+		return driver;
 		
+	}
+	
+	
+	public static void main(String...args) {
+		
+		/*
+		 * BaseClass b=new BaseClass(); b.setup();
+		 */
 	}
 }
