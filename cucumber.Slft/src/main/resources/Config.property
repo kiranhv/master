@@ -1,0 +1,5 @@
+Chromepath=C:/Softwares/Selenium/Step 7 - Chrome driver/chromedriver_win32/chromedriver.exe
+URL = https://test-portal-rs.northgateps.com/rsuat/en/login
+
+username = uatslft
+password = Testing@2
