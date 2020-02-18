@@ -1,0 +1,6 @@
+Chromepath= ./src/main/resources/chromedriver.exe
+URL = https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start
+
+Day = "18"
+Month = "09"
+Year = "1970"
