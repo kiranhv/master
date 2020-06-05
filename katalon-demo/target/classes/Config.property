@@ -1,0 +1,8 @@
+Chromepath= ./src/main/resources/chromedriver.exe
+URL = https://katalon-demo-cura.herokuapp.com/
+
+username=John Doe
+password=ThisIsNotAPassword
+
+visitdate=30/06/2020
+comment=Hello, Comments
