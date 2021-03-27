@@ -1,0 +1,5 @@
+Chromepath = ./src/main/resources/chromedriver.exe
+URL = http://automationpractice.com/index.php
+
+username=testuser123@gmail.com
+password=testuser123
