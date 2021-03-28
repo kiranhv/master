@@ -39,13 +39,5 @@ Properties pro;
 	{
 		return pro.getProperty("password");
 	}
-	public String getVisitDate()
-	{
-		return pro.getProperty("visitdate");
-	}
-	public String getComment()
-	{
-		return pro.getProperty("comment");
-	}
 	
 }
