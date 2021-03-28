@@ -29,15 +29,7 @@ public class RetailWebsitepageObject {
 	@FindBy(xpath="/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[3]/a") WebElement Tshirtlink;
 	@FindBy(xpath="/html/body/div[2]/div[1]/header/div[3]/div/div/div[4]/div[1]/div[2]/div[4]/a") WebElement proceedBtn;
 	
-	@FindBy(id="txt_visit_date") WebElement Visitdate;
-	@FindBy(xpath="/html/body/div/div[1]/table/tbody/tr[2]/td[4]") WebElement selectDate;
-	
-	@FindBy(id="txt_comment") WebElement enterComment;
-	@FindBy(id="btn-book-appointment") WebElement Bookappbtn;
-	//@FindBy(css="#summary > div > div > div:nth-child(7) > p > a") WebElement backtoHomePage;
-	@FindBy(id="menu-toggle") WebElement menu;
-	@FindBy(xpath="//*[@id='sidebar-wrapper']/ul/li[5]/a") WebElement logoutbtn;
-	
+		
 	public void getuserName(String uname, String pass)
 	{
 		signinlink.click();
